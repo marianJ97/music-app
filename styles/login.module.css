@@ -1,0 +1,32 @@
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  max-width: 300px;
+  text-align: center;
+  color: #8029d1;
+}
+
+.form input {
+  border: none;
+  border-radius: 5px;
+  background-color: #33333375;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  outline: none;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0px 0px 7px 0px #8029d1;
+}
+
+.form button {
+  border: none;
+  padding: 10px 25px;
+  background: rgb(101, 7, 179);
+  border-radius: 15px;
+  color: #fff;
+}

@@ -1,0 +1,9 @@
+.rhap_container .rhap_main-controls button {
+  color: #8029d1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 3px #8920b0bd;
+}
+
+.rhap_progress-filled {
+  background-color: #5e3594;
+}

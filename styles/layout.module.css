@@ -1,0 +1,39 @@
+.container {
+  font-weight: bold;
+  color: #333;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(10, 13, 11, 1) 0%,
+    rgb(44, 5, 42) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.top,
+.footer {
+  height: 50px;
+  width: 100vw;
+  color: #fff;
+  background: #343335;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.top button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.top button svg {
+  vertical-align: sub;
+}
+
+.top button:hover {
+  cursor: pointer;
+  color: #8029d1;
+}

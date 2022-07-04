@@ -14,3 +14,92 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.rhap_container {
+  background-color: #313131;
+  box-shadow: 0px 0px 3px 3px #ad53d66e;
+  border-radius: 10px;
+}
+
+.rhap_container .rhap_play-pause-button {
+  color: #8029d1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 3px #8920b0bd;
+}
+
+.rhap_container .rhap_progress-filled {
+  background-color: #5e3594;
+}
+
+.rhap_container .rhap_progress-indicator {
+  background: #8029d1;
+  box-shadow: rgb(93 15 229 / 82%) 0 0 10px 2px;
+}
+
+.rhap_container .rhap_time {
+  color: #868686;
+}
+
+.rhap_container .rhap_play-pause-button {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  /* display: block;
+  margin: 100px auto; */
+  /* box-shadow: 0px 0px 25px 3px rgba(255, 0, 128, 0.8); */
+}
+
+/* pulse wave */
+.rhap_container .rhap_play-pause-button:before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate1 2s;
+  animation: pulsate1 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(110, 81, 218, 0.75);
+  top: -37%;
+  left: -37%;
+}
+
+@-webkit-keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(178, 103, 240, 0.75),
+      0px 0px 25px 10px rgba(113, 26, 184, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+  }
+}
+
+@keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(178, 103, 240, 0.75),
+      0px 0px 25px 10px rgba(113, 26, 184, 0.75);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+  }
+}

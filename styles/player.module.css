@@ -1,0 +1,86 @@
+.cplayer {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: #fff;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 3px;
+  /* box-shadow: inset -6px -6px 12px rgba(0,0,0,.8); */
+}
+.cplayer h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+.cplayer p {
+  color: #aaa;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.playercontrols div.rhap_container {
+  background-color: #31313100;
+  /* box-shadow: 0px 0px 3px 3px #ad53d66e; */
+  border-radius: 10px;
+}
+
+.playerWrapper {
+  background-color: #3a196a21;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 0px #450e80;
+  padding: 30px 10px 10px 10px;
+}
+
+.playercontrols {
+  width: 500px;
+}
+
+.playerdetails .detailsimg {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.detailsimg > span {
+  display: block;
+  margin: 0px auto;
+  border-radius: 10px;
+  box-shadow: 6px 6px 12px rgb(95 23 173 / 64%), -6px -6px 12px #d42be18f;
+}
+
+.detailstitle {
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.detailsartist {
+  font-weight: 200;
+  color: #aaa;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .playercontrols {
+    width: 350px;
+  }
+
+  .cplayer {
+    padding: 5px;
+  }
+
+  .detailsimg {
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+  }
+}
