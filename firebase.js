@@ -13,12 +13,12 @@ import {
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCIOR2rgygjWwLFij85hYkEfsymqsD-fIw",
+  apiKey: process.env.FIREBASE_KEY,
   authDomain: "music-application-ce8c4.firebaseapp.com",
   projectId: "music-application-ce8c4",
   storageBucket: "music-application-ce8c4.appspot.com",
   messagingSenderId: "618783165597",
-  appId: "1:618783165597:web:1d524547a6f938ec025874",
+  appId: process.env.APP_ID,
   measurementId: "G-ZMFLR5CMDV",
 };
 
